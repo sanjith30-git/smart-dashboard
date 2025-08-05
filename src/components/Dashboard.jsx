@@ -49,7 +49,7 @@ export default function Dashboard() {
         <div key={relay.id} className="bg-white shadow-md rounded-lg p-4">
           <h2 className="text-xl font-semibold mb-2">{relay.label}</h2>
           <button
-            className={\`px-4 py-2 rounded-full \${relayStates[i] ? "bg-red-500" : "bg-green-500"} text-white\`}
+            className={`px-4 py-2 rounded-full ${relayStates[i] ? "bg-red-500" : "bg-green-500"} text-white`}
             onClick={() => toggleRelay(relay.id)}
           >
             {relayStates[i] ? "Turn OFF" : "Turn ON"}
